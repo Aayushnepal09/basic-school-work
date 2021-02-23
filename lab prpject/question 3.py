@@ -1,0 +1,6 @@
+name=input(" enter your name ")
+age=input("enter tour age")
+print ("my name is ",name + " my age is",age)
+print("my name is"+name+"and i am"+str(age)+"years old" )
+print("hello my name is %s and i am %s years old" % (name,age))
+print("hello mr name is {} and i am{} years old".format(name,age))
