@@ -6,4 +6,3 @@ mass=float(input("enter body mass in kg"))
 height=float(input("enter height in meter"))
 bmi=mass/(height**2)
 print(f"the bmi of the person is {bmi}")
-
