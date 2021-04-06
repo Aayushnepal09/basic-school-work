@@ -1,4 +1,4 @@
-''' car game
+""" car game
  >help
 start-to start the car
  stop- to stop yhe car
@@ -9,7 +9,7 @@ start-to start the car
  car started.... ready to go!!
  >stop
  car stopped
- >quit'''
+ >quit"""
 
 command = ""
 started = False
@@ -19,9 +19,9 @@ while True:
         if started:
             print("Car is already started !!")
         else:
-         started = True
-         print("Car started !!...")
-    elif command=="stop":
+            started = True
+            print("Car started !!...")
+    elif command == "stop":
         if not started:
             print("Car is already stopped !!")
         else:
@@ -33,4 +33,3 @@ while True:
         break
     else:
         print("Sorry, I don't understand that !!")
-
