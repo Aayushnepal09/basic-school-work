@@ -1,4 +1,4 @@
-#inpit the weight of a person in either kg or lbs.
+#input the weight of a person in either kg or lbs.
 #if the person provides his/her weight in kg then convert it into lbs else convert it to kg.
 
 weight=(float(input("enter your weight")))
