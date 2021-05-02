@@ -73,7 +73,7 @@ def button_equal():
     if math == "div":
         e.insert(0, f_num / int(second_number))
 
-
+root.iconbitmap('C:\download\icon.ico')
 # defining the buttons
 button_1 = Button(root, text='1', padx=45, pady=25, command=lambda: button_click(1))
 button_2 = Button(root, text='2', padx=45, pady=25, command=lambda: button_click(2))

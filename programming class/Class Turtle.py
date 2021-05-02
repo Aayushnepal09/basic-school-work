@@ -6,10 +6,10 @@ screen=turtle.Screen()'''
 screen=Screen()
 '''
 
-from turtle import *
+from turtle import*
 screen=Screen()
 pen=Turtle()
-pen.speed(1)
+pen.speed(2)
 pen.begin_fill()
 pen.shape('turtle')
 pen.fillcolor('red')
