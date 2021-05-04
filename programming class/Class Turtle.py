@@ -1,14 +1,15 @@
-#importing turtle
-'''import turtle
-screen=turtle.Screen()'''
+# importing turtle
+"""import turtle
+screen=turtle.Screen()"""
 '''or'''
 '''from turtle import *
 screen=Screen()
 '''
 
-from turtle import*
-screen=Screen()
-pen=Turtle()
+from turtle import *
+
+screen = Screen()
+pen = Turtle()
 pen.speed(2)
 pen.begin_fill()
 pen.shape('turtle')
@@ -19,9 +20,9 @@ pen.color('blue')
 pen.left(25)
 pen.backward(200)
 pen.right(50)'''
-for i in range(5):     # star
+for i in range(5):  # star
     pen.forward(300)
     pen.left(144)
 pen.end_fill()
-#done
+# done
 screen.exitonclick()
