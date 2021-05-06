@@ -1,3 +1,7 @@
-f = (open('xyz.txt', 'a+'))
-f.write('yo whats up')
+f = (open('xyz.txt','r'))
+print('Initial position',f.tell)
+f.seek(6)
+content=f.read()
+print(content)
+print(type(content))
 f.close
