@@ -1,2 +1,2 @@
-f=open('random','x')
+f=open('random','w')
 f.close()
