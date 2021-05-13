@@ -11,20 +11,31 @@ screen = pygame.display.set_mode((500, 500))
 pygame.display.set_caption("FLAPPY BIRD")
 icon = pygame.image.load('redbird-upflap.png')
 pygame.display.set_icon(icon)
+
 # Adjusting game speed
 speed = pygame.time.Clock()
+
 # adding background image
 background = pygame.image.load('background-day.png')
 background = pygame.transform.scale(background, (500, 500))
-# adding flore image
+
+# adding floor image
 floor = pygame.image.load('base.png')
 floor = pygame.transform.scale2x(floor)
 floorX = 0
 
+# adding bird
+bird = pygame.image.load('bluebird-midflap.png')
+bird = pygame.transform.scale2x(bird)
+bird_box = bird.get_rect(center=(100, 250))
+fall = 0.5  # gravity
+bird_movement = 0
+
+
+# function to make floor continuously moving in the screen
 def floor_movement():
     screen.blit(floor, (floorX, 400))
-    screen.blit(floor, (floorX+500, 400))
-
+    screen.blit(floor, (floorX + 500, 400))
 
 
 
@@ -34,12 +45,20 @@ while True:
 
     pygame.display.update()
     speed.tick(150)
+
     for movement in pygame.event.get():
         if movement.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+
     screen.blit(background, (0, 0))
+    # bird movement
+    screen.blit(bird, bird_box)
+    bird_movement += fall
+    bird_box.centery += bird_movement
+    # floor movement
     floorX -= 1
     floor_movement()
-    if floorX<=-500:
-        floorX=0
+
+    if floorX <= -500:
+        floorX = 0
