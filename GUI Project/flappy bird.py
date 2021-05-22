@@ -75,6 +75,7 @@ while True:
         if movement.type == pipe_timer:
             pipe_list.append(pipe_appear())
     screen.blit(background, (0, 0))
+
     # bird movement
     screen.blit(bird, bird_box)
     bird_movement += fall
