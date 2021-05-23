@@ -1,11 +1,5 @@
-f=open('xyz.txt','r')
+f=open('xyz.txt','r')           # r for read  # w for read # a for append 3 # x+ taja file
 y=open('abc.txt','w')
-
-contain=f.read()
-
-copied=contain
-
-y.write(copied)
-
+y.write(f.read())
 f.close()
 y.close()

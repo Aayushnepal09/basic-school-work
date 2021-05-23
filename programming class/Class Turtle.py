@@ -12,10 +12,11 @@ screen = Screen()
 pen = Turtle()
 pen.speed(2)
 pen.begin_fill()
+pen.width(0)
 pen.shape('turtle')
 pen.fillcolor('red')
 pen.color('blue')
-
+bgcolor('red')
 '''pen.forward(200)    #random
 pen.left(25)
 pen.backward(200)
